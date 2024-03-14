@@ -1,8 +1,8 @@
 package clases;
 
 public class Comida {
-    private String nombre = "";
-    private double cantidad = 0;
+    private String nombre;
+    private double cantidad;
 
     public Comida(String nombre, double cantidad) {
         this.nombre = nombre;
@@ -19,8 +19,7 @@ public class Comida {
 
     @Override
     public String toString() {
-        return "La comida que usted eligio es: " +
-                nombre + '\'' +
-                ", y en cantidad = " + cantidad + ". \n Su pedido llegara en breve";
+        return "La comida que usted eligio es: " + getNombre() +
+                ", y la cantidad = " + getCantidad() + ". \nSu pedido llegara en breve";
     }
 }
