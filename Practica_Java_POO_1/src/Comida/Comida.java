@@ -1,13 +1,10 @@
-package clases;
+package Comida;
 
 public class Comida {
-    private String nombre;
-    private double cantidad;
+    private String nombre = "";
+    private double cantidad = 0;
 
-    public Comida(String nombre, double cantidad) {
-        this.nombre = nombre;
-        this.cantidad = cantidad;
-    }
+    public Comida() {}
 
     public String getNombre() {return nombre;}
 

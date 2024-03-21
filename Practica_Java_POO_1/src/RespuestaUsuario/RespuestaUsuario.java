@@ -1,20 +1,23 @@
-package clases;
+package RespuestaUsuario;
 
+import Comida.Comida;
 import java.util.Scanner;
 
 public class RespuestaUsuario {
 
     public void usuarioComida(){
         Scanner respuestaUsuario = new Scanner(System.in);
+        Comida comida = new Comida();
 
         System.out.println("Bienvenido \nPara continar ingrese la comida que desea:");
-        String decisionPersonaComida = respuestaUsuario.nextLine();
+        String nombre = respuestaUsuario.nextLine();
+        comida.setNombre(nombre);
 
         System.out.println("Ahora ingrese la cantidad:");
-        double decisionPersonaCantidad = respuestaUsuario.nextDouble();
+        double cantidad = respuestaUsuario.nextDouble();
+        comida.setCantidad(cantidad);
 
-        Comida comida = new Comida(decisionPersonaComida,decisionPersonaCantidad);
-        System.out.println(comida.toString());
+        System.out.println(comida);
 
         respuestaUsuario.close();
     }
