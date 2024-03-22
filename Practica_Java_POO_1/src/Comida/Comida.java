@@ -1,6 +1,6 @@
 package Comida;
 
-public class Comida {
+public class Comida { //Se maneja los datos obtenidos para entregarlos con un toString
     private String nombre = "";
     private double cantidad = 0;
 
